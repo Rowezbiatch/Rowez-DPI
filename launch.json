@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "RowezDPI Debug",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}\\build\\Debug\\rowezdpi.exe",
+            "args": [
+                "--doh", "https://cloudflare-dns.com/dns-query",
+                "--stealth", "1",
+                "--theme", "dark"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}\\build\\Debug",
+            "environment": [],
+            "externalConsole": true,
+            "preLaunchTask": "build"
+        }
+    ]
+}
